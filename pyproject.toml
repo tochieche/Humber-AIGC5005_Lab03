@@ -5,11 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lab3package"
 version = "0.1.0"
-description = "My Python project"
+description = "Humber-AIGC5005_Lab03"
 requires-python = ">=3.11"
 
 dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["lab3package"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
